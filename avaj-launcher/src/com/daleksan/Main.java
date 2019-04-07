@@ -7,8 +7,7 @@ public class Main {
         if (args[0] != null && !args[0].isEmpty())
             simulation.start(args[0]);
         else {
-            throw Exception();
-            System.out.println("No file! Please check.");
+            throw new IllegalArgumentException("No file! Please check.");
             //написать проверку на фаил
         }
     }
