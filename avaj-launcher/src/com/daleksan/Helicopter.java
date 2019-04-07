@@ -1,6 +1,6 @@
 package com.daleksan;
 
-import sun.rmi.runtime.Log;
+//import sun.rmi.runtime.Log;
 
 public class Helicopter extends Aircraft implements Flyable {
 

@@ -15,6 +15,7 @@ public class WeatherTower extends Tower {
     @Override
     public void register(Flyable flyable) {
         observers.add(flyable);
+
     }
 
     @Override

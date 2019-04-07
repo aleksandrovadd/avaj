@@ -14,7 +14,7 @@ public class Baloon extends Aircraft implements Flyable {
     protected Baloon(String name, Coordinates coordinates, String type) {
         super(name, coordinates);
         this.type = type;
-        System.out.println(id);
+//        System.out.println(id);
     }
 
     @Override
