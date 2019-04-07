@@ -1,0 +1,35 @@
+Tower says: Baloon#B1 register in WeatherTower
+Tower says: Baloon#B2 register in WeatherTower
+Tower says: Baloon#B3 register in WeatherTower
+Baloon#B1: I can't see anything! It's foggy now!
+Baloon#B2: It's freezing!
+Baloon#B3: It's raining!
+Baloon#B1: I can't see anything! It's foggy now!
+Baloon#B2: It's freezing!
+Baloon#B3: It's raining!
+Baloon#B1: I can't see anything! It's foggy now!
+Baloon#B2: It's raining!
+Baloon#B3: I can't see anything! It's foggy now!
+Baloon#B1: I can't see anything! It's foggy now!
+Baloon#B2: It's raining!
+Baloon#B3: I can't see anything! It's foggy now!
+Baloon#B1: I can't see anything! It's foggy now!
+Baloon#B2: It's raining!
+Baloon#B3: I can't see anything! It's foggy now!
+Baloon#B1: I can't see anything! It's foggy now!
+Baloon#B2: I can't see anything! It's foggy now!
+Baloon#B3: I can't see anything! It's foggy now!
+Baloon#B1: I can't see anything! It's foggy now!
+Tower says: Baloon#B1 Unregister in WeatherTower
+Baloon#B2: I can't see anything! It's foggy now!
+Baloon#B3: I can't see anything! It's foggy now!
+Baloon#B2: I can't see anything! It's foggy now!
+Baloon#B3: I can't see anything! It's foggy now!
+Baloon#B2: I can't see anything! It's foggy now!
+Baloon#B3: I can't see anything! It's foggy now!
+Baloon#B2: I can't see anything! It's foggy now!
+Baloon#B3: I can't see anything! It's foggy now!
+Tower says: Baloon#B3 Unregister in WeatherTower
+Baloon#B2: I can't see anything! It's foggy now!
+Baloon#B2: I can't see anything! It's foggy now!
+Tower says: Baloon#B2 Unregister in WeatherTower
