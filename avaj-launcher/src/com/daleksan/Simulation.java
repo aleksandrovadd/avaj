@@ -4,32 +4,32 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Simulation implements LogListener{
+public class Simulation {
 
-    private int count = 0;
-    private List<Flyable> flyableList;
-    private WeatherTower weatherTower;
-    private List<String> logs;
-    private List<String> scenarioString;
+    private static List<Flyable> flyableList = new ArrayList<>();
+    private static WeatherTower weatherTower = new WeatherTower();
+    private static List<String> scenarioString = new ArrayList<>();
+    private static int count = 0;
 
-    public Simulation(){
-        flyableList = new ArrayList<>();
-        weatherTower = new WeatherTower();
-        logs = new ArrayList<>();
-        scenarioString = new ArrayList<>();
-    }
+        public static void main(String[] args) {
 
-    public void start(String scenario) {
-        try(BufferedReader br = new BufferedReader(new FileReader(scenario))) {
+        try {
+
+            BufferedWriter wr = new BufferedWriter(new FileWriter("simulation.txt"));
+            new LogListener(wr);
+
+            if (args.length != 1 || (args[0] == null && args[0].isEmpty()))
+                throw new IllegalArgumentException("No file! Please check.");
+            BufferedReader br = new BufferedReader(new FileReader(args[0]));
             String s;
             int i = 0;
             while ((s = br.readLine()) != null) {
                 if (i == 0) {
                     try {
                         count = Integer.valueOf(s);
-                    } catch (NumberFormatException ex) {
-                        System.out.print("First line is not an integer number");
-                        System.exit(0);
+                    }
+                    catch (IllegalArgumentException ex) {
+                        System.out.println("First line is not an integer number");
                     }
                     if (count < 0) {
                         System.out.println("First line is not a positive integer number");
@@ -45,70 +45,46 @@ public class Simulation implements LogListener{
                 }
                 i = -1;
             }
-        } catch(IOException ex) {
-            if (ex instanceof FileNotFoundException) {
-                System.out.println("File doesn't exist");
-            } else {
-                System.out.println(ex.getMessage());
+            br.close();
+
+            for (String s1 : scenarioString) {
+                flyableList.add(parseScenario(s1));
             }
+
+            for (Flyable f : flyableList) {
+                weatherTower.register(f);
+            }
+
+            simulate(count);
+            wr.close();
+        } catch(IOException ex) {
+            ex.printStackTrace();
             System.exit(0);
         }
-
-        for (String s : scenarioString) {
-            flyableList.add(parseScenario(s));
-        }
-
-        for (Flyable f : flyableList) {
-            weatherTower.register(f);
-        }
-
-        simulate();
-
-        System.out.println(logs.size());
-        writeInFile();
     }
 
-    private void simulate() {
-        for (int i = 0; i < count; i++) {
-            weatherTower.conditionChanged();
+        private static void simulate(int count) {
+            for (int i = 0; i < count; i++) {
+                weatherTower.conditionChanged();
+            }
         }
-    }
 
-    private Flyable parseScenario(String s) {
-        String[] arr = s.split(" ");
-        Flyable newAir = AircraftFactory.newAircraft(arr[0], arr[1], Integer.valueOf(arr[2]), Integer.valueOf(arr[3]), Integer.valueOf(arr[4]));
-        newAir.setLogListener(this);
-        newAir.registerTower(weatherTower);
-        return newAir;
-    }
+        private static Flyable parseScenario(String s) {
+            String[] arr = s.split(" ");
+            Flyable newAir = AircraftFactory.newAircraft(arr[0], arr[1], Integer.valueOf(arr[2]), Integer.valueOf(arr[3]), Integer.valueOf(arr[4]));
+            newAir.registerTower(weatherTower);
+            return newAir;
+        }
 
-    private boolean checkScenario(String s) {
-        String[] arr = s.split(" ");
-        if (arr.length != 5) {
-            return false;
-        } else {
-            if (!arr[2].matches("[+]?\\d+") || !arr[3].matches("[+]?\\d+") || !arr[4].matches("[+]?\\d+")) {
+        private static boolean checkScenario(String s) {
+            String[] arr = s.split(" ");
+            if (arr.length != 5) {
+                return false;
+            } else if (!arr[2].matches("[+]?\\d+") || !arr[3].matches("[+]?\\d+") || !arr[4].matches("[+]?\\d+")) {
                 return false;
             }
+            return true;
         }
-        return true;
-    }
-
-    private void writeInFile() {
-        try(BufferedWriter br = new BufferedWriter(new FileWriter("simulation.txt")))
-        {
-            for(String line : logs) {
-                br.write(line);
-                br.write("\n");
-            }
-        } catch(IOException ex){
-            System.out.println(ex.getMessage());
-        }
-    }
-
-    @Override
-    public void onLog(String log) {
-        logs.add(log);
-    }
 }
+
 

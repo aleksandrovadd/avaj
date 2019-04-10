@@ -1,6 +1,5 @@
 package com.daleksan;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
@@ -14,6 +13,7 @@ public class WeatherTower extends Tower {
 
     @Override
     public void register(Flyable flyable) {
+        LogListener.log("Tower says: " + flyable + " registered to weather tower");
         observers.add(flyable);
     }
 

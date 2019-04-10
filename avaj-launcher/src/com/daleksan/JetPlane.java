@@ -3,55 +3,53 @@ package com.daleksan;
 public class JetPlane extends Aircraft implements Flyable {
 
     private WeatherTower weatherTower;
-    private String type;
-    private LogListener logListener;
+    private String message;
 
-    protected JetPlane(String name, Coordinates coordinates, String type) {
+    protected JetPlane(String name, Coordinates coordinates) {
         super(name, coordinates);
-        this.type = type;
-        System.out.println(id);
     }
 
     @Override
     public void updateConditions() {
+
         switch (WeatherProvider.getProvider().getCurrentWeather(coordinates)) {
             case "FOG":
                 coordinates.setLatitude(coordinates.getLatitude() + 1);
-                System.out.println(String.format("%s#%s: I can't see anything! It's foggy now!", type, name));
+                message = "I can't see anything! It's foggy now!";
                 break;
             case "RAIN":
                 coordinates.setLatitude(coordinates.getLatitude() + 5);
-                System.out.println(String.format("%s#%s: It's raining!", type, name));
+                message = "It's raining!";
                 break;
             case "SNOW":
                 coordinates.setHeight(coordinates.getHeight() - 7);
-                System.out.println(String.format("%s#%s: It's freezing!", type, name));
+                message = "It's freezing! Stay warm!";
                 break;
             case "SUN":
                 coordinates.setLatitude(coordinates.getLatitude() + 10);
                 coordinates.setHeight(coordinates.getHeight() + 2);
-                System.out.println(String.format("%s#%s: It's hot! and bright", type, name));
+                message = "It's hot! And bright. Bring some ice!";
                 break;
             default:
                 break;
         }
         if (coordinates.getHeight() <= 0) {
             weatherTower.unregister(this);
-            System.out.println(String.format("Tower says: %s#%s Unregister in WeatherTower", type, name));
+            message = "We are landing at coordinates: " + coordinates.getLongitude() + " " + coordinates.getLatitude() + " " + 0;
         }
         if (coordinates.getHeight() > 100) {
             coordinates.setHeight(100);
         }
+        LogListener.log(toString() + ": " + message);
     }
 
     @Override
     public void registerTower(WeatherTower weatherTower) {
         this.weatherTower = weatherTower;
-        System.out.println(String.format("Tower says: %s#%s register in WeatherTower", type, name));
     }
 
     @Override
-    public void setLogListener(LogListener logListener) {
-        this.logListener = logListener;
+    public String toString() {
+        return Aircraft.JetPlane + super.toString();
     }
 }

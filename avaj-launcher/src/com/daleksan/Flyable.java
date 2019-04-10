@@ -2,8 +2,7 @@ package com.daleksan;
 
 public interface Flyable {
 
-    public void updateConditions();
-    public void registerTower(WeatherTower weatherTower);
-    public void setLogListener(LogListener logListener);
+    void updateConditions();
+    void registerTower(WeatherTower weatherTower);
 
 }

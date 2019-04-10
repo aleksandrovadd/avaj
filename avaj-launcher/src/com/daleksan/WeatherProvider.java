@@ -1,7 +1,5 @@
 package com.daleksan;
 
-import java.util.List;
-
 public class WeatherProvider {
 
     private static WeatherProvider instance;

@@ -1,35 +1,188 @@
-Tower says: Baloon#B1 register in WeatherTower
-Tower says: Baloon#B2 register in WeatherTower
-Tower says: Baloon#B3 register in WeatherTower
-Baloon#B1: I can't see anything! It's foggy now!
-Baloon#B2: It's freezing!
-Baloon#B3: It's raining!
-Baloon#B1: I can't see anything! It's foggy now!
-Baloon#B2: It's freezing!
-Baloon#B3: It's raining!
-Baloon#B1: I can't see anything! It's foggy now!
-Baloon#B2: It's raining!
-Baloon#B3: I can't see anything! It's foggy now!
-Baloon#B1: I can't see anything! It's foggy now!
-Baloon#B2: It's raining!
-Baloon#B3: I can't see anything! It's foggy now!
-Baloon#B1: I can't see anything! It's foggy now!
-Baloon#B2: It's raining!
-Baloon#B3: I can't see anything! It's foggy now!
-Baloon#B1: I can't see anything! It's foggy now!
-Baloon#B2: I can't see anything! It's foggy now!
-Baloon#B3: I can't see anything! It's foggy now!
-Baloon#B1: I can't see anything! It's foggy now!
-Tower says: Baloon#B1 Unregister in WeatherTower
-Baloon#B2: I can't see anything! It's foggy now!
-Baloon#B3: I can't see anything! It's foggy now!
-Baloon#B2: I can't see anything! It's foggy now!
-Baloon#B3: I can't see anything! It's foggy now!
-Baloon#B2: I can't see anything! It's foggy now!
-Baloon#B3: I can't see anything! It's foggy now!
-Baloon#B2: I can't see anything! It's foggy now!
-Baloon#B3: I can't see anything! It's foggy now!
-Tower says: Baloon#B3 Unregister in WeatherTower
-Baloon#B2: I can't see anything! It's foggy now!
-Baloon#B2: I can't see anything! It's foggy now!
-Tower says: Baloon#B2 Unregister in WeatherTower
+Tower says: Baloon#B1(1) registered to weather tower
+Tower says: Baloon#B2(2) registered to weather tower
+Tower says: JetPlane#J1(3) registered to weather tower
+Tower says: Helicopter#H1(4) registered to weather tower
+Tower says: Helicopter#H2(5) registered to weather tower
+Tower says: Helicopter#H3(6) registered to weather tower
+Tower says: Baloon#B3(7) registered to weather tower
+Tower says: JetPlane#J2(8) registered to weather tower
+Tower says: Helicopter#H4(9) registered to weather tower
+Baloon#B1(1): I can't see anything! It's foggy now!
+Baloon#B2(2): It's freezing! Stuard, bring me hot tea!
+JetPlane#J1(3): It's raining!
+Helicopter#H1(4): I can't see anything! It's foggy now!
+Helicopter#H2(5): It's raining!
+Helicopter#H3(6): It's hot! and bright
+Baloon#B3(7): It's watery! Give me some towel
+JetPlane#J2(8): It's hot! And bright. Bring some ice!
+Helicopter#H4(9): It's freezing!
+Baloon#B1(1): I can't see anything! It's foggy now!
+Baloon#B2(2): It's freezing! Stuard, bring me hot tea!
+JetPlane#J1(3): It's raining!
+Helicopter#H1(4): I can't see anything! It's foggy now!
+Helicopter#H2(5): It's raining!
+Helicopter#H3(6): It's hot! and bright
+Baloon#B3(7): It's watery! Give me some towel
+JetPlane#J2(8): It's hot! And bright. Bring some ice!
+Helicopter#H4(9): It's raining!
+Baloon#B1(1): I can't see anything! It's foggy now!
+Baloon#B2(2): It's watery! Give me some towel
+JetPlane#J1(3): It's raining!
+Helicopter#H1(4): I can't see anything! It's foggy now!
+Helicopter#H2(5): It's raining!
+Helicopter#H3(6): It's hot! and bright
+Baloon#B3(7): I can't see anything! It's foggy now!
+JetPlane#J2(8): It's hot! And bright. Bring some ice!
+Helicopter#H4(9): It's raining!
+Baloon#B1(1): I can't see anything! It's foggy now!
+Baloon#B2(2): It's watery! Give me some towel
+JetPlane#J1(3): It's raining!
+Helicopter#H1(4): I can't see anything! It's foggy now!
+Helicopter#H2(5): It's raining!
+Helicopter#H3(6): It's hot! and bright
+Baloon#B3(7): I can't see anything! It's foggy now!
+JetPlane#J2(8): It's hot! And bright. Bring some ice!
+Helicopter#H4(9): It's raining!
+Baloon#B1(1): I can't see anything! It's foggy now!
+Baloon#B2(2): It's watery! Give me some towel
+JetPlane#J1(3): It's raining!
+Helicopter#H1(4): I can't see anything! It's foggy now!
+Helicopter#H2(5): It's raining!
+Helicopter#H3(6): It's hot! and bright
+Baloon#B3(7): I can't see anything! It's foggy now!
+JetPlane#J2(8): It's hot! And bright. Bring some ice!
+Helicopter#H4(9): It's raining!
+Baloon#B1(1): I can't see anything! It's foggy now!
+Baloon#B2(2): I can't see anything! It's foggy now!
+JetPlane#J1(3): It's raining!
+Helicopter#H1(4): I can't see anything! It's foggy now!
+Helicopter#H2(5): It's raining!
+Helicopter#H3(6): It's hot! and bright
+Baloon#B3(7): I can't see anything! It's foggy now!
+JetPlane#J2(8): It's hot! And bright. Bring some ice!
+Helicopter#H4(9): It's raining!
+Baloon#B1(1): We are landing at coordinates: 2 3 0
+Baloon#B2(2): I can't see anything! It's foggy now!
+JetPlane#J1(3): It's raining!
+Helicopter#H1(4): I can't see anything! It's foggy now!
+Helicopter#H2(5): It's raining!
+Helicopter#H3(6): It's hot! and bright
+Baloon#B3(7): I can't see anything! It's foggy now!
+JetPlane#J2(8): It's hot! And bright. Bring some ice!
+Helicopter#H4(9): It's raining!
+Baloon#B2(2): I can't see anything! It's foggy now!
+JetPlane#J1(3): It's raining!
+Helicopter#H1(4): I can't see anything! It's foggy now!
+Helicopter#H2(5): It's raining!
+Helicopter#H3(6): It's hot! and bright
+Baloon#B3(7): I can't see anything! It's foggy now!
+JetPlane#J2(8): It's hot! And bright. Bring some ice!
+Helicopter#H4(9): It's raining!
+Baloon#B2(2): I can't see anything! It's foggy now!
+JetPlane#J1(3): It's raining!
+Helicopter#H1(4): I can't see anything! It's foggy now!
+Helicopter#H2(5): It's raining!
+Helicopter#H3(6): It's hot! and bright
+Baloon#B3(7): I can't see anything! It's foggy now!
+JetPlane#J2(8): It's hot! And bright. Bring some ice!
+Helicopter#H4(9): It's raining!
+Baloon#B2(2): I can't see anything! It's foggy now!
+JetPlane#J1(3): It's raining!
+Helicopter#H1(4): I can't see anything! It's foggy now!
+Helicopter#H2(5): It's raining!
+Helicopter#H3(6): It's hot! and bright
+Baloon#B3(7): We are landing at coordinates: 102 22 0
+JetPlane#J2(8): It's hot! And bright. Bring some ice!
+Helicopter#H4(9): It's raining!
+Baloon#B2(2): I can't see anything! It's foggy now!
+JetPlane#J1(3): It's raining!
+Helicopter#H1(4): I can't see anything! It's foggy now!
+Helicopter#H2(5): It's raining!
+Helicopter#H3(6): It's hot! and bright
+JetPlane#J2(8): It's hot! And bright. Bring some ice!
+Helicopter#H4(9): It's raining!
+Baloon#B2(2): We are landing at coordinates: 1 8 0
+JetPlane#J1(3): It's raining!
+Helicopter#H1(4): I can't see anything! It's foggy now!
+Helicopter#H2(5): It's raining!
+Helicopter#H3(6): It's hot! and bright
+JetPlane#J2(8): It's hot! And bright. Bring some ice!
+Helicopter#H4(9): It's raining!
+JetPlane#J1(3): It's raining!
+Helicopter#H1(4): I can't see anything! It's foggy now!
+Helicopter#H2(5): It's raining!
+Helicopter#H3(6): It's hot! and bright
+JetPlane#J2(8): It's hot! And bright. Bring some ice!
+Helicopter#H4(9): It's raining!
+JetPlane#J1(3): It's raining!
+Helicopter#H1(4): I can't see anything! It's foggy now!
+Helicopter#H2(5): It's raining!
+Helicopter#H3(6): It's hot! and bright
+JetPlane#J2(8): It's hot! And bright. Bring some ice!
+Helicopter#H4(9): It's raining!
+JetPlane#J1(3): It's raining!
+Helicopter#H1(4): I can't see anything! It's foggy now!
+Helicopter#H2(5): It's raining!
+Helicopter#H3(6): It's hot! and bright
+JetPlane#J2(8): It's hot! And bright. Bring some ice!
+Helicopter#H4(9): It's raining!
+JetPlane#J1(3): It's raining!
+Helicopter#H1(4): I can't see anything! It's foggy now!
+Helicopter#H2(5): It's raining!
+Helicopter#H3(6): It's hot! and bright
+JetPlane#J2(8): It's hot! And bright. Bring some ice!
+Helicopter#H4(9): It's raining!
+JetPlane#J1(3): It's raining!
+Helicopter#H1(4): I can't see anything! It's foggy now!
+Helicopter#H2(5): It's raining!
+Helicopter#H3(6): It's hot! and bright
+JetPlane#J2(8): It's hot! And bright. Bring some ice!
+Helicopter#H4(9): It's raining!
+JetPlane#J1(3): It's raining!
+Helicopter#H1(4): I can't see anything! It's foggy now!
+Helicopter#H2(5): It's raining!
+Helicopter#H3(6): It's hot! and bright
+JetPlane#J2(8): It's hot! And bright. Bring some ice!
+Helicopter#H4(9): It's raining!
+JetPlane#J1(3): It's raining!
+Helicopter#H1(4): I can't see anything! It's foggy now!
+Helicopter#H2(5): It's raining!
+Helicopter#H3(6): It's hot! and bright
+JetPlane#J2(8): It's hot! And bright. Bring some ice!
+Helicopter#H4(9): It's raining!
+JetPlane#J1(3): It's raining!
+Helicopter#H1(4): I can't see anything! It's foggy now!
+Helicopter#H2(5): It's raining!
+Helicopter#H3(6): It's hot! and bright
+JetPlane#J2(8): It's hot! And bright. Bring some ice!
+Helicopter#H4(9): It's raining!
+JetPlane#J1(3): It's raining!
+Helicopter#H1(4): I can't see anything! It's foggy now!
+Helicopter#H2(5): It's raining!
+Helicopter#H3(6): It's hot! and bright
+JetPlane#J2(8): It's hot! And bright. Bring some ice!
+Helicopter#H4(9): It's raining!
+JetPlane#J1(3): It's raining!
+Helicopter#H1(4): I can't see anything! It's foggy now!
+Helicopter#H2(5): It's raining!
+Helicopter#H3(6): It's hot! and bright
+JetPlane#J2(8): It's hot! And bright. Bring some ice!
+Helicopter#H4(9): It's raining!
+JetPlane#J1(3): It's raining!
+Helicopter#H1(4): I can't see anything! It's foggy now!
+Helicopter#H2(5): It's raining!
+Helicopter#H3(6): It's hot! and bright
+JetPlane#J2(8): It's hot! And bright. Bring some ice!
+Helicopter#H4(9): It's raining!
+JetPlane#J1(3): It's raining!
+Helicopter#H1(4): I can't see anything! It's foggy now!
+Helicopter#H2(5): It's raining!
+Helicopter#H3(6): It's hot! and bright
+JetPlane#J2(8): It's hot! And bright. Bring some ice!
+Helicopter#H4(9): It's raining!
+JetPlane#J1(3): It's raining!
+Helicopter#H1(4): I can't see anything! It's foggy now!
+Helicopter#H2(5): It's raining!
+Helicopter#H3(6): It's hot! and bright
+JetPlane#J2(8): It's hot! And bright. Bring some ice!
+Helicopter#H4(9): It's raining!

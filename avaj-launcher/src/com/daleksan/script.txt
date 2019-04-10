@@ -1,3 +1,0 @@
-find . -name "*.java" > sources.txt
-javac @sources.txtrm
-java com/daleksan/Llll com/daleksan/scenario
